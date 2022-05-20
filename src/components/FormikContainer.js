@@ -37,6 +37,8 @@ const FormikContainer = () => {
     console.log("Form data", values);
     // console.log("Saved data", JSON.parse(JSON.stringify(values)));
     form.resetForm();
+    form.setSubmitting(false);
+    alert(JSON.stringify(values));
   };
 
   return (
