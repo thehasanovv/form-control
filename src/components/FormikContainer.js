@@ -51,6 +51,7 @@ const FormikContainer = () => {
         >
           {(formik) => (
             <Form className="form">
+              <h1 className="title">Registration</h1>
               <FormikControl
                 control="input"
                 type="text"
