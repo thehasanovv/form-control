@@ -32,6 +32,7 @@ function BirthDate(props) {
                       form.errors[name]
                     }
                     style={{ width: "345px" }}
+                    className="datePicker"
                   />
                 )}
               />
