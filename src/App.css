@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+body {
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 11px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgb(249, 249, 249);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+  padding: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-control:nth-child(8) {
+  grid-column: 1 / span 2;
+  grid-row: 5 / 6;
+}
+
+.form-control:nth-child(8) > div > div {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.registerButton {
+  grid-column: 1 / span 2;
+  grid-row: 6 / 7;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+.datePicker {
+  display: block;
+  width: 320px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-image: none;
+  border-radius: 10px;
+  /* margin-bottom: 20px; */
 }
